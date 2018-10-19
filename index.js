@@ -28,7 +28,7 @@ app.get('/api/genres', (req, res) => {
 
 //Get genre per ID
 app.get('/api/genres/:id', (req, res) => {
-    const genre = genres.find(c => c.id === parseInt(req.params.id));
+    const genre = genres.find(s => s.id === parseInt(req.params.id));
     if(!req.body.id) return res.status(404).send('The genre with the given id was not found');
 
     res.send(genre);
@@ -56,7 +56,7 @@ app.post('/api/genres', (req,res) => {
 app.put('/api/genres/:id', (req, res) => {
     //Look up the course
     //If not existing, retun 404
-    const genre = genres.find(c => c.id === parseInt(req.params.id));
+    const genre = genres.find(s => s.id === parseInt(req.params.id));
     if (!genre) return res.status(404).send('The genre with the given ID was not found');
 
     //Validate
@@ -74,7 +74,7 @@ app.put('/api/genres/:id', (req, res) => {
 });
 
 app.delete('/api/genres/:id', (req, res) => {
-    const genre = genres.find(genre => genre.id === parseInt(req.params.id));
+    const genre = genres.find(s => s.id === parseInt(req.params.id));
     //Return not found if the id is invalid
     if(!genre) return res.status(404).send('The genre with the given id was not found');
 

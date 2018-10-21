@@ -21,19 +21,19 @@ app.get('/', (req, res) =>{
 });
 
 //Get all genres
-app.get('/api/genres', (req, res) => {
+app.get('/', (req, res) => {
     res.send(genres);
 });
 
 //Get genre per ID
-app.get('/api/genres/:id', (req, res) => {
+app.get('/:id', (req, res) => {
     const genre = genres.find(s => s.id === parseInt(req.params.id));
     if(!req.body.id) return res.status(404).send('The genre with the given id was not found');
 
     res.send(genre);
 });
 
-app.post('/api/genres', (req,res) => {
+app.post('/', (req,res) => {
     //Object destructing to retrieve exact value from object thats need
     const {error} = validateGenres(req.body);
 
@@ -52,7 +52,7 @@ app.post('/api/genres', (req,res) => {
 
 });
 
-app.put('/api/genres/:id', (req, res) => {
+app.put('/:id', (req, res) => {
     //Look up the course
     //If not existing, retun 404
     const genre = genres.find(s => s.id === parseInt(req.params.id));
@@ -72,7 +72,7 @@ app.put('/api/genres/:id', (req, res) => {
 
 });
 
-app.delete('/api/genres/:id', (req, res) => {
+app.delete('/:id', (req, res) => {
     const genre = genres.find(s => s.id === parseInt(req.params.id));
     //Return not found if the id is invalid
     if(!genre) return res.status(404).send('The genre with the given id was not found');

@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Enado95/Vidly#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "joi": "^14.0.0"
+    "joi": "^14.0.0",
+    "mongoose": "^5.3.10"
   }
 }

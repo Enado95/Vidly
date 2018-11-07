@@ -1,7 +1,7 @@
 const express = require('express');
 const Joi = require('joi');
 
-const router = express.router();
+const router = express.Router();
 
 const genres = [
     {id: 1, name: 'Documentary'},
@@ -15,25 +15,20 @@ function validateGenres(genres){
 
     return Joi.validate(genres,schema);
 }
-
-app.get('/', (req, res) =>{
-    res.send('Welcome to the genre service');
-});
-
 //Get all genres
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
     res.send(genres);
 });
 
 //Get genre per ID
-app.get('/:id', (req, res) => {
+router.get('/:id', (req, res) => {
     const genre = genres.find(s => s.id === parseInt(req.params.id));
     if(!req.body.id) return res.status(404).send('The genre with the given id was not found');
 
     res.send(genre);
 });
 
-app.post('/', (req,res) => {
+router.post('/', (req,res) => {
     //Object destructing to retrieve exact value from object thats need
     const {error} = validateGenres(req.body);
 
@@ -52,7 +47,7 @@ app.post('/', (req,res) => {
 
 });
 
-app.put('/:id', (req, res) => {
+router.put('/:id', (req, res) => {
     //Look up the course
     //If not existing, retun 404
     const genre = genres.find(s => s.id === parseInt(req.params.id));
@@ -72,7 +67,7 @@ app.put('/:id', (req, res) => {
 
 });
 
-app.delete('/:id', (req, res) => {
+router.delete('/:id', (req, res) => {
     const genre = genres.find(s => s.id === parseInt(req.params.id));
     //Return not found if the id is invalid
     if(!genre) return res.status(404).send('The genre with the given id was not found');

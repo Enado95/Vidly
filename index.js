@@ -4,7 +4,7 @@ const genres = require('./routes/genres');
 const customers = require('./routes/customers')
 const app = express();
 
-mongoose.connect('mongodb://odane:Passw0rd@10.170.65.113:27001/vidly?authSource=admin',{ useNewUrlParser: true })
+mongoose.connect('mongodb+srv://enado:mbiP87rC2ew2ab0h@cluster0-6aldy.mongodb.net/node-app4?retryWrites=true',{ useNewUrlParser: true })
 .then(() => console.log('Connected to MongoDB..'))
 .catch(err => console.error('Could not connect to mongoDb', err));
 

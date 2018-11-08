@@ -1,0 +1,3 @@
+Connections
+Cloud cluster 
+mongodb+srv://enado:mbiP87rC2ew2ab0h@cluster0-6aldy.mongodb.net/vidly?retryWrites=true

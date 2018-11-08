@@ -1,31 +1,37 @@
-const { Customer, validate} = require('../models/customers');
+const { Customer, validate } = require('../models/customers');
 const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
 //Get all customers
-router.get('/', async (req, res) =>{
+router.get('/', async (req, res) => {
     const customers = await Customer.find().sort('name');
 
     res.send(customers);
 });
 
 //Get customers per ID
-router.get('/:id', async (req,res) => {
-    const customer = await Customer.findById(mongoose.Types.ObjectId(req.params.id));
-    
-    if(!customer) return res.status(404).send("Customer with the given ID was not found");
+router.get('/:id', async (req, res) => {
+    try {
+        const customer = await Customer.findById(mongoose.Types.ObjectId(req.params.id))
 
-    res.send(customer)
+        if (!customer) return res.status(404).send("Customer with the given ID was not found");
+
+        res.send(customer)
+    }
+    catch (err) {
+        return res.status(400).send(err.message);
+    }
+
 });
 
 //Add new customer
-router.post('/', async (req,res) => {
+router.post('/', async (req, res) => {
     //Object destructing to retrieve exact value from object thats need
-    const {error} = validate(req.body);
+    const { error } = validate(req.body);
 
     //If there is an error return a response with proper status code
-    if(error){
+    if (error) {
         return res.status(400).send(error.details[0].message);
     }
 
@@ -43,30 +49,40 @@ router.post('/', async (req,res) => {
 
 //update customer
 router.put('/:id', async (req, res) => {
-    const {error} = validate(req.body);
-    if (error){
-        return res.status(400).send(error.details[0].message);
+    try {
+        const { error } = validate(req.body);
+        if (error) {
+            return res.status(400).send(error.details[0].message);
+        }
+
+        const customer = await Customer.findByIdAndUpdate(mongoose.Types.ObjectId(req.params.id), {
+            isGold: req.body.isGold,
+            name: req.body.name,
+            phone: req.body.phone
+        },
+            { new: true });
+
+        if (!customer) return res.status(404).send("Customer with the given id was not found");
+
+        res.send(customer);
     }
-
-    const customer = await Customer.findByIdAndUpdate(mongoose.Types.ObjectId(req.params.id), {
-        isGold: req.body.isGold,
-        name: req.body.name,
-        phone: req.body.phone 
-    },
-    {new: true});
-
-    if(!customer) return res.status(404).send("Customer with the given id was not found");
-
-    res.send(customer);
+    catch (err) {
+        return res.status(400).send(err.message);
+    }
 });
 
 //Delete Customer
-router.delete('/:id', async (req, res) => { 
-    const customer = await Customer.findByIdAndDelete(mongoose.Types.ObjectId(req.params.id));
+router.delete('/:id', async (req, res) => {
+    try {
+        const customer = await Customer.findByIdAndDelete(mongoose.Types.ObjectId(req.params.id));
 
-    if(!customer) return res.status(404).send("Customer with the given ID was not found");
+        if (!customer) return res.status(404).send("Customer with the given ID was not found");
 
-    res.send(customer);
+        res.send(customer);
+    }
+    catch (err) {
+        return res.status(400).send(err.message);
+    }
 });
 
 module.exports = router;

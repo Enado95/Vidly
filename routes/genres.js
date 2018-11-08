@@ -41,7 +41,7 @@ router.put('/:id', async (req, res) => {
     if (error){
         return res.status(400).send(error.details[0].message);
     }
-    const genre = await Genre.findOneAndUpdate(mongoose.Types.ObjectId(req.params.id), {name: req.body.name}, {
+    const genre = await Genre.findByIdAndUpdate(mongoose.Types.ObjectId(req.params.id), {name: req.body.name}, {
         new: true
     });
 
@@ -53,7 +53,7 @@ router.put('/:id', async (req, res) => {
 });
 
 router.delete('/:id', async (req, res) => {
-    const genre = await Genre.findOneAndDelete(req.params.id);
+    const genre = await Genre.findByIdAndDelete(mongoose.Types.ObjectId(req.params.id));
 
     if(!genre) return res.status(404).send('The genre with the given id was not found');
 

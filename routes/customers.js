@@ -13,7 +13,7 @@ router.get('/', async (req, res) =>{
 //Get customers per ID
 router.get('/:id', async (req,res) => {
     const customer = await Customer.findById(mongoose.Types.ObjectId(req.params.id));
-
+    
     if(!customer) return res.status(404).send("Customer with the given ID was not found");
 
     res.send(customer)
@@ -48,10 +48,10 @@ router.put('/:id', async (req, res) => {
         return res.status(400).send(error.details[0].message);
     }
 
-    const customer = await Customer.findOneAndUpdate(mongoose.Types.ObjectId(req.params.id), {
+    const customer = await Customer.findByIdAndUpdate(mongoose.Types.ObjectId(req.params.id), {
         isGold: req.body.isGold,
         name: req.body.name,
-        phone: req.body.phone
+        phone: req.body.phone 
     },
     {new: true});
 
@@ -62,7 +62,7 @@ router.put('/:id', async (req, res) => {
 
 //Delete Customer
 router.delete('/:id', async (req, res) => { 
-    const customer = await Customer.findOneAndDelete(mongoose.Types.ObjectId(req.params.id));
+    const customer = await Customer.findByIdAndDelete(mongoose.Types.ObjectId(req.params.id));
 
     if(!customer) return res.status(404).send("Customer with the given ID was not found");
 

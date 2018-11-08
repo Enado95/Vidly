@@ -45,6 +45,8 @@ router.get('/:id', async (req,res) => {
     const customer = await Customer.findById(req.params.id);
 
     if(!customer) return res.status(404).send("Customer with the given ID was not found");
+
+    res.send(customer)
 });
 
 //Add new customer

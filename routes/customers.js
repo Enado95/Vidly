@@ -77,9 +77,9 @@ router.put('/:id', async (req, res) => {
     }
 
     const customer = await Customer.findOneAndUpdate(req.params.id, {
-        isGold: req.params.isGold,
-        name: req.params.name,
-        phone: req.params.phone
+        isGold: req.body.isGold,
+        name: req.body.name,
+        phone: req.body.phone
     },
     {new: true});
 

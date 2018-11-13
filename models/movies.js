@@ -1,28 +1,38 @@
 const mongoose = require('mongoose');
 const Joi = require('joi');
-const Genres = require('./genres');
+const {genreSchema} = require('./genres');
 
 
 const Movie = mongoose.model('Movie', new mongoose.Schema({
     title: {
         type: String,
         minlength: 3,
+        maxlength: 255,
         required: true
     },
-    genre: [Genres],
-    numberInStock: number,
-    dailyRentalRate: number
+    genre: genreSchema,
+    numberInStock: {
+       type: Number,
+       minlength: 0,
+       maxlength: 300
+    },
+    dailyRentalRate: {
+        type: Number,
+        required: true,
+        minlength: 0,
+        maxlength: 300        
+    }
 }));
 
 function validateMovies(movies){
     const schema = {
-        title: Joi.number().min(3).required(),
-        genre: Joi.required(),
-        numberInStock: Joi.required(),
-        dailyRentalRate: Joi.required()
+        title: Joi.string().min(3).max(255).required(),
+        genreId: Joi.string().required(),
+        numberInStock: Joi.number().min(0).required(),
+        dailyRentalRate: Joi.number().min(0).required()
     }
 
-    return Joi.validate(customers, schema);
+    return Joi.validate(movies, schema);
 };
 
 exports.Movie = Movie;

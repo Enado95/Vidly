@@ -21,7 +21,7 @@ router.post('/', async (req, res) => {
     const token = jwt.sign({ _id: user._id}, config.get('jwtPrivateKey') );
 
     res.send(token);
-})
+});
 
 function validate(req) {
     const schema = {

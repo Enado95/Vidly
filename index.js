@@ -1,3 +1,4 @@
+const config = require('config');
 const Joi = require('joi');
 Joi.objectId =  require('joi-objectid')(Joi);
 const mongoose = require('mongoose');
@@ -10,9 +11,23 @@ const rentals = require('./routes/rentals');
 const users = require('./routes/users');
 const app = express();
 
+if(!config.get('jwtPrivateKey')) {
+    console.error('FATAL error: jwtPrivateKey is not defined.');
+    process.exit(1);
+};
+
 mongoose
-    .connect('mongodb://odane:Passw0rd@10.170.65.113:27001/vidly?authSource=admin',
-        { useNewUrlParser: true, useFindAndModify: false, useCreateIndex: true, })
+    .connect('mongodb://10.170.65.113:27001/vidly',
+        { 
+            authSource: 'admin',
+            auth: {
+                user: 'odane',
+                password: 'Passw0rd'
+            },
+            useNewUrlParser: true, 
+            useFindAndModify: false, 
+            useCreateIndex: true, 
+        })
     .then(() => console.log('Connected to MongoDB..'))
     .catch(err => console.error('Could not connect to mongoDb', err));
 

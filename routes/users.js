@@ -1,4 +1,4 @@
-const auth = ('../middleware/auth');
+const auth = require('../middleware/auth');
 const _ = require('lodash');
 const jwt = require('jsonwebtoken');
 const config = require('config');
@@ -8,9 +8,9 @@ const mongoose = require('mongoose');
 const express = require('express');
 const router = express.Router();
 
-router.get('/me', async (req, res) => {
+router.get('/me', auth, async (req,res) => {
     const user = await User.findById(req.user._id).select('-password');
-    res.send(user);
+    res.send(user)
 });
 
 router.post('/', async (req, res) => {
@@ -28,5 +28,6 @@ router.post('/', async (req, res) => {
     const token = user.generateAuthToken();
     res.header('x-auth-token', token).send(_.pick(user,['_id','name', 'email']));
 });
+
 
 module.exports = router;

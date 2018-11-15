@@ -1,3 +1,4 @@
+const auth = require('../middleware/auth');
 const { Genre, validate } = require('../models/genre');
 const mongoose = require('mongoose');
 const express = require('express');
@@ -24,7 +25,7 @@ router.get('/:id', async (req, res) => {
 });
 
 //Created new genre
-router.post('/', async (req, res) => {
+router.post('/', auth, async (req, res) => {
     //Object destructing to retrieve exact value from object thats need
     const { error } = validate(req.body);
 

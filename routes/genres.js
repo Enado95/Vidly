@@ -13,16 +13,13 @@ router.get('/', async (req, res) => {
 
 //Get genre per ID
 router.get('/:id', async (req, res) => {
-    try {
-        const genre = await Genre.findById(mongoose.Types.ObjectId(req.params.id));
 
-        if (!genre) return res.status(404).send('The genre with the given id was not found');
+    const genre = await Genre.findById(mongoose.Types.ObjectId(req.params.id));
 
-        res.send(genre);
-    }
-    catch (err) {
-        return res.status(400).send(err.message);
-    }
+    if (!genre) return res.status(404).send('The genre with the given id was not found');
+
+    res.send(genre);
+
 });
 
 //Created new genre
@@ -44,37 +41,30 @@ router.post('/', auth, async (req, res) => {
 
 //update genres
 router.put('/:id', async (req, res) => {
-    try {
-        const { error } = validate(req.body);
-        if (error) {
-            return res.status(400).send(error.details[0].message);
-        }
-        const genre = await Genre.findByIdAndUpdate(mongoose.Types.ObjectId(req.params.id), { name: req.body.name }, {
-            new: true
-        });
 
-        if (!genre) return res.status(404).send('The genre with the given ID was not found');
+    const { error } = validate(req.body);
+    if (error) {
+        return res.status(400).send(error.details[0].message);
+    }
+    const genre = await Genre.findByIdAndUpdate(mongoose.Types.ObjectId(req.params.id), { name: req.body.name }, {
+        new: true
+    });
 
-        //return the updated course
-        res.send(genre);
-    }
-    catch (err) {
-        return res.status(400).send(err.message);
-    }
+    if (!genre) return res.status(404).send('The genre with the given ID was not found');
+
+    //return the updated course
+    res.send(genre);
 
 });
 
-router.delete('/:id', [auth,admin], async (req, res) => {
-    try {
-        const genre = await Genre.findByIdAndDelete(mongoose.Types.ObjectId(req.params.id));
+router.delete('/:id', [auth, admin], async (req, res) => {
 
-        if (!genre) return res.status(404).send('The genre with the given id was not found');
+    const genre = await Genre.findByIdAndDelete(mongoose.Types.ObjectId(req.params.id));
 
-        res.send(genre);
-    }
-    catch (err) {
-        return res.status(400).send(err.message);
-    }
+    if (!genre) return res.status(404).send('The genre with the given id was not found');
+
+    res.send(genre);
+
 
 });
 

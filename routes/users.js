@@ -9,7 +9,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/me', async (req, res) => {
-    const user = await User.findById(req.user._id).select('-passwprd');
+    const user = await User.findById(req.user._id).select('-password');
     res.send(user);
 });
 

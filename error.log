@@ -1,5 +1,0 @@
-{ message: 'Could not get the genres',
-  level: 'error',
-  label: 'App logging',
-  timestamp: '2018-11-15 20:21:45',
-  [Symbol(level)]: 'error' }

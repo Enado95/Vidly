@@ -366,3 +366,95 @@
   label: 'App logging',
   timestamp: '2018-11-16 12:34:32',
   [Symbol(level)]: 'error' }
+{ error:
+   Error: something happened
+       at Object.<anonymous> (E:\Users\brissettor\Apps\Vidly\index.js:28:7)
+       at Module._compile (internal/modules/cjs/loader.js:688:30)
+       at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+       at Module.load (internal/modules/cjs/loader.js:598:32)
+       at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+       at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+       at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+       at startup (internal/bootstrap/node.js:285:19)
+       at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3),
+  level: 'error',
+  message:
+   'uncaughtException: something happened\nError: something happened\n    at Object.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\index.js:28:7)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\n    at Module.load (internal/modules/cjs/loader.js:598:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)\n    at startup (internal/bootstrap/node.js:285:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)',
+  stack:
+   'Error: something happened\n    at Object.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\index.js:28:7)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\n    at Module.load (internal/modules/cjs/loader.js:598:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)\n    at startup (internal/bootstrap/node.js:285:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)',
+  exception: true,
+  date: 'Fri Nov 16 2018 12:38:21 GMT-0500 (Eastern Standard Time)',
+  process:
+   { pid: 24648,
+     uid: null,
+     gid: null,
+     cwd: 'E:\\Users\\brissettor\\Apps\\Vidly',
+     execPath: 'C:\\Program Files\\nodejs\\node.exe',
+     version: 'v10.13.0',
+     argv:
+      [ 'C:\\Program Files\\nodejs\\node.exe',
+        'E:\\Users\\brissettor\\Apps\\Vidly\\index.js' ],
+     memoryUsage:
+      { rss: 60067840,
+        heapTotal: 59060224,
+        heapUsed: 28864520,
+        external: 37072357 } },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 55154 },
+  trace:
+   [ { column: 7,
+       file: 'E:\\Users\\brissettor\\Apps\\Vidly\\index.js',
+       function: null,
+       line: 28,
+       method: null,
+       native: false },
+     { column: 30,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._compile',
+       line: 688,
+       method: '_compile',
+       native: false },
+     { column: 10,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._extensions..js',
+       line: 699,
+       method: '.js',
+       native: false },
+     { column: 32,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module.load',
+       line: 598,
+       method: 'load',
+       native: false },
+     { column: 12,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'tryModuleLoad',
+       line: 537,
+       method: null,
+       native: false },
+     { column: 3,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._load',
+       line: 529,
+       method: '_load',
+       native: false },
+     { column: 12,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module.runMain',
+       line: 741,
+       method: 'runMain',
+       native: false },
+     { column: 19,
+       file: 'internal/bootstrap/node.js',
+       function: 'startup',
+       line: 285,
+       method: null,
+       native: false },
+     { column: 3,
+       file: 'internal/bootstrap/node.js',
+       function: 'bootstrapNodeJSCore',
+       line: 739,
+       method: null,
+       native: false } ],
+  label: 'App logging',
+  timestamp: '2018-11-16 12:38:21',
+  [Symbol(level)]: 'error' }

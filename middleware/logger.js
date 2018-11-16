@@ -1,13 +1,14 @@
 const winston = require('winston');
 const { format } = winston;
-const { combine, label, json, timestamp, prettyPrint } = format;
+const { combine, label, timestamp, prettyPrint } = format;
 
 const errorLog = winston.createLogger({
     format: combine(
         label({label: 'App logging'}),
-        timestamp(),
+        timestamp({
+            format: 'YYYY-MM-DD HH:mm:ss'
+        }),
         prettyPrint()
-        
     ),
     transports: [
         new winston.transports.Console({ level: 'error' }),

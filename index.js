@@ -21,16 +21,16 @@ if (!config.get('jwtPrivateKey')) {
 };
 
 mongoose
-    .connect('mongodb://10.170.65.113:27001/vidly',
-        {
+    .connect('mongodb+srv://cluster0-6aldy.mongodb.net/vidly?retryWrites=true',
+        { 
             authSource: 'admin',
             auth: {
-                user: 'odane',
-                password: 'Passw0rd'
+                user: 'superuser',
+                password: 'greatpassword'
             },
-            useNewUrlParser: true,
-            useFindAndModify: false,
-            useCreateIndex: true,
+            useNewUrlParser: true, 
+            useFindAndModify: false, 
+            useCreateIndex: true, 
         })
     .then(() => console.log('Connected to MongoDB..'))
     .catch(err => console.error('Could not connect to mongoDb', err));

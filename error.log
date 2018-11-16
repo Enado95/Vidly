@@ -1,46 +1,5 @@
 { message: 'Could not get the genres',
   level: 'error',
   label: 'App logging',
-  timestamp: '2018-11-15T23:28:03.621Z',
-  [Symbol(level)]: 'error',
-  [Symbol(message)]:
-   '{"message":"Could not get the genres","level":"error","label":"App logging","timestamp":"2018-11-15T23:28:03.621Z"}' }
-{ message: 'Could not get the genres',
-  level: 'error',
-  label: 'App logging',
-  timestamp: '2018-11-15T23:29:05.001Z',
-  [Symbol(level)]: 'error',
-  [Symbol(message)]:
-   '{"message":"Could not get the genres","level":"error","label":"App logging","timestamp":"2018-11-15T23:29:05.001Z"}' }
-{ message: 'Could not get the genres',
-  level: 'error',
-  label: 'App logging',
-  timestamp: '2018-11-15T23:29:31.886Z',
-  [Symbol(level)]: 'error',
-  [Symbol(message)]:
-   '{"message":"Could not get the genres","level":"error","label":"App logging","timestamp":"2018-11-15T23:29:31.886Z"}' }
-{ message: 'Could not get the genres',
-  level: 'error',
-  label: 'App logging',
-  timestamp: '2018-11-15T23:30:28.317Z',
-  [Symbol(level)]: 'error' }
-{ message: 'Could not get the genres',
-  level: 'error',
-  label: 'App logging',
-  timestamp: '2018-11-15T23:37:25.189Z',
-  [Symbol(level)]: 'error' }
-{ message: 'Could not get the genres',
-  level: 'error',
-  label: 'App logging',
-  timestamp: '2018-11-15T23:37:25.676Z',
-  [Symbol(level)]: 'error' }
-{ message: 'Could not get the genres',
-  level: 'error',
-  label: 'App logging',
-  timestamp: '2018-11-15T23:37:26.175Z',
-  [Symbol(level)]: 'error' }
-{ message: 'Could not get the genres',
-  level: 'error',
-  label: 'App logging',
-  timestamp: '2018-11-15T23:37:26.753Z',
+  timestamp: '2018-11-15 20:21:45',
   [Symbol(level)]: 'error' }

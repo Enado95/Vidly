@@ -59,7 +59,7 @@ const infoLog = winston.createLogger({
           level: 'debug',
           format: format.combine(
             enumerateErrorFormat(),
-            format.json()
+            format.simple()
           ),
         }),
     ]

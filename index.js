@@ -9,5 +9,6 @@ require('./startup/db')();
 require('./startup/config')();
 require('./startup/validation')();
 
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => logger.infoLog.log({level: 'info', message: `Listening on port ${port}`}));

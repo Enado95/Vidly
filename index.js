@@ -1,27 +1,13 @@
-require('express-async-errors');
-const winston = require('winston');
-require('winston-mongodb');
 const logger = require('./middleware/logger');
-const config = require('config');
-const Joi = require('joi');
-Joi.objectId = require('joi-objectid')(Joi);
-const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 
+
+require('./startup/logging');
 require('./startup/routes')(app);
-
-logger.exceptionsLog.exceptions.handle();
-
-process.on('unhandledRejection', (ex) => {
-    throw ex;
-});
-
-if (!config.get('jwtPrivateKey')) {
-    console.error('FATAL error: jwtPrivateKey is not defined.');
-    process.exit(1);
-};
-
+require('./startup/db')();
+require('./startup/config')();
+require('./startup/validation')();
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(port, () => logger.infoLog.log({level: 'info', message: `Listening on port ${port}`}));

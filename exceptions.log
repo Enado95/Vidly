@@ -458,3 +458,987 @@
   label: 'App logging',
   timestamp: '2018-11-16 12:38:21',
   [Symbol(level)]: 'error' }
+{ error:
+   ReferenceError: log is not defined
+       at mongoose.connect.then (E:\Users\brissettor\Apps\Vidly\startup\db.js:17:31)
+       at tryCatcher (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:512:31)
+       at Promise._settlePromise (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:569:18)
+       at Promise._settlePromise0 (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:614:10)
+       at Promise._settlePromises (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:693:18)
+       at Promise._fulfill (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:638:18)
+       at Promise._resolveCallback (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:432:57)
+       at Promise._settlePromiseFromHandler (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:524:17)
+       at Promise._settlePromise (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:569:18)
+       at Promise._settlePromise0 (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:614:10)
+       at Promise._settlePromises (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:693:18)
+       at Promise._fulfill (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:638:18)
+       at Promise._settlePromise (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:582:21)
+       at Promise._settlePromise0 (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:614:10)
+       at Promise._settlePromises (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:693:18)
+       at Promise._fulfill (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:638:18)
+       at Promise._resolveCallback (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:432:57)
+       at Promise._settlePromiseFromHandler (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:524:17)
+       at Promise._settlePromise (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:569:18)
+       at Promise._settlePromise0 (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:614:10)
+       at Promise._settlePromises (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:693:18),
+  level: 'error',
+  message:
+   'uncaughtException: log is not defined\nReferenceError: log is not defined\n    at mongoose.connect.then (E:\\Users\\brissettor\\Apps\\Vidly\\startup\\db.js:17:31)\n    at tryCatcher (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at Promise._resolveCallback (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:432:57)\n    at Promise._settlePromiseFromHandler (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:524:17)\n    at Promise._settlePromise (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at Promise._settlePromise (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:582:21)\n    at Promise._settlePromise0 (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at Promise._resolveCallback (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:432:57)\n    at Promise._settlePromiseFromHandler (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:524:17)\n    at Promise._settlePromise (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:693:18)',
+  stack:
+   'ReferenceError: log is not defined\n    at mongoose.connect.then (E:\\Users\\brissettor\\Apps\\Vidly\\startup\\db.js:17:31)\n    at tryCatcher (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at Promise._resolveCallback (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:432:57)\n    at Promise._settlePromiseFromHandler (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:524:17)\n    at Promise._settlePromise (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at Promise._settlePromise (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:582:21)\n    at Promise._settlePromise0 (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at Promise._resolveCallback (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:432:57)\n    at Promise._settlePromiseFromHandler (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:524:17)\n    at Promise._settlePromise (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:693:18)',
+  exception: true,
+  date: 'Fri Nov 16 2018 14:02:02 GMT-0500 (Eastern Standard Time)',
+  process:
+   { pid: 31064,
+     uid: null,
+     gid: null,
+     cwd: 'E:\\Users\\brissettor\\Apps\\Vidly',
+     execPath: 'C:\\Program Files\\nodejs\\node.exe',
+     version: 'v10.13.0',
+     argv:
+      [ 'C:\\Program Files\\nodejs\\node.exe',
+        'E:\\Users\\brissettor\\Apps\\Vidly\\index.js' ],
+     memoryUsage:
+      { rss: 59449344,
+        heapTotal: 60067840,
+        heapUsed: 23077824,
+        external: 36110362 } },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 60174 },
+  trace:
+   [ { column: 31,
+       file: 'E:\\Users\\brissettor\\Apps\\Vidly\\startup\\db.js',
+       function: 'mongoose.connect.then',
+       line: 17,
+       method: 'then',
+       native: false },
+     { column: 23,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\util.js',
+       function: 'tryCatcher',
+       line: 16,
+       method: null,
+       native: false },
+     { column: 31,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromiseFromHandler',
+       line: 512,
+       method: '_settlePromiseFromHandler',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromise',
+       line: 569,
+       method: '_settlePromise',
+       native: false },
+     { column: 10,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromise0',
+       line: 614,
+       method: '_settlePromise0',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromises',
+       line: 693,
+       method: '_settlePromises',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._fulfill',
+       line: 638,
+       method: '_fulfill',
+       native: false },
+     { column: 57,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._resolveCallback',
+       line: 432,
+       method: '_resolveCallback',
+       native: false },
+     { column: 17,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromiseFromHandler',
+       line: 524,
+       method: '_settlePromiseFromHandler',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromise',
+       line: 569,
+       method: '_settlePromise',
+       native: false },
+     { column: 10,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromise0',
+       line: 614,
+       method: '_settlePromise0',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromises',
+       line: 693,
+       method: '_settlePromises',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._fulfill',
+       line: 638,
+       method: '_fulfill',
+       native: false },
+     { column: 21,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromise',
+       line: 582,
+       method: '_settlePromise',
+       native: false },
+     { column: 10,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromise0',
+       line: 614,
+       method: '_settlePromise0',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromises',
+       line: 693,
+       method: '_settlePromises',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._fulfill',
+       line: 638,
+       method: '_fulfill',
+       native: false },
+     { column: 57,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._resolveCallback',
+       line: 432,
+       method: '_resolveCallback',
+       native: false },
+     { column: 17,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromiseFromHandler',
+       line: 524,
+       method: '_settlePromiseFromHandler',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromise',
+       line: 569,
+       method: '_settlePromise',
+       native: false },
+     { column: 10,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromise0',
+       line: 614,
+       method: '_settlePromise0',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromises',
+       line: 693,
+       method: '_settlePromises',
+       native: false } ],
+  label: 'App logging',
+  timestamp: '2018-11-16 14:02:02',
+  [Symbol(level)]: 'error' }
+{ error:
+   TypeError: Cannot read property 'error' of undefined
+       at mongoose.connect.then (E:\Users\brissettor\Apps\Vidly\startup\db.js:17:34)
+       at tryCatcher (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:512:31)
+       at Promise._settlePromise (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:569:18)
+       at Promise._settlePromise0 (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:614:10)
+       at Promise._settlePromises (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:693:18)
+       at Promise._fulfill (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:638:18)
+       at Promise._resolveCallback (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:432:57)
+       at Promise._settlePromiseFromHandler (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:524:17)
+       at Promise._settlePromise (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:569:18)
+       at Promise._settlePromise0 (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:614:10)
+       at Promise._settlePromises (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:693:18)
+       at Promise._fulfill (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:638:18)
+       at Promise._settlePromise (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:582:21)
+       at Promise._settlePromise0 (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:614:10)
+       at Promise._settlePromises (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:693:18)
+       at Promise._fulfill (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:638:18)
+       at Promise._resolveCallback (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:432:57)
+       at Promise._settlePromiseFromHandler (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:524:17)
+       at Promise._settlePromise (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:569:18)
+       at Promise._settlePromise0 (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:614:10)
+       at Promise._settlePromises (E:\Users\brissettor\Apps\Vidly\node_modules\fawn\node_modules\bluebird\js\release\promise.js:693:18),
+  level: 'error',
+  message:
+   'uncaughtException: Cannot read property \'error\' of undefined\nTypeError: Cannot read property \'error\' of undefined\n    at mongoose.connect.then (E:\\Users\\brissettor\\Apps\\Vidly\\startup\\db.js:17:34)\n    at tryCatcher (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at Promise._resolveCallback (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:432:57)\n    at Promise._settlePromiseFromHandler (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:524:17)\n    at Promise._settlePromise (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at Promise._settlePromise (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:582:21)\n    at Promise._settlePromise0 (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at Promise._resolveCallback (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:432:57)\n    at Promise._settlePromiseFromHandler (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:524:17)\n    at Promise._settlePromise (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:693:18)',
+  stack:
+   'TypeError: Cannot read property \'error\' of undefined\n    at mongoose.connect.then (E:\\Users\\brissettor\\Apps\\Vidly\\startup\\db.js:17:34)\n    at tryCatcher (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at Promise._resolveCallback (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:432:57)\n    at Promise._settlePromiseFromHandler (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:524:17)\n    at Promise._settlePromise (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at Promise._settlePromise (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:582:21)\n    at Promise._settlePromise0 (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Promise._fulfill (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:638:18)\n    at Promise._resolveCallback (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:432:57)\n    at Promise._settlePromiseFromHandler (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:524:17)\n    at Promise._settlePromise (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js:693:18)',
+  exception: true,
+  date: 'Fri Nov 16 2018 14:02:55 GMT-0500 (Eastern Standard Time)',
+  process:
+   { pid: 24284,
+     uid: null,
+     gid: null,
+     cwd: 'E:\\Users\\brissettor\\Apps\\Vidly',
+     execPath: 'C:\\Program Files\\nodejs\\node.exe',
+     version: 'v10.13.0',
+     argv:
+      [ 'C:\\Program Files\\nodejs\\node.exe',
+        'E:\\Users\\brissettor\\Apps\\Vidly\\index.js' ],
+     memoryUsage:
+      { rss: 59375616,
+        heapTotal: 60592128,
+        heapUsed: 23107824,
+        external: 36110362 } },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 60227 },
+  trace:
+   [ { column: 34,
+       file: 'E:\\Users\\brissettor\\Apps\\Vidly\\startup\\db.js',
+       function: 'mongoose.connect.then',
+       line: 17,
+       method: 'then',
+       native: false },
+     { column: 23,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\util.js',
+       function: 'tryCatcher',
+       line: 16,
+       method: null,
+       native: false },
+     { column: 31,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromiseFromHandler',
+       line: 512,
+       method: '_settlePromiseFromHandler',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromise',
+       line: 569,
+       method: '_settlePromise',
+       native: false },
+     { column: 10,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromise0',
+       line: 614,
+       method: '_settlePromise0',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromises',
+       line: 693,
+       method: '_settlePromises',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._fulfill',
+       line: 638,
+       method: '_fulfill',
+       native: false },
+     { column: 57,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._resolveCallback',
+       line: 432,
+       method: '_resolveCallback',
+       native: false },
+     { column: 17,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromiseFromHandler',
+       line: 524,
+       method: '_settlePromiseFromHandler',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromise',
+       line: 569,
+       method: '_settlePromise',
+       native: false },
+     { column: 10,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromise0',
+       line: 614,
+       method: '_settlePromise0',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromises',
+       line: 693,
+       method: '_settlePromises',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._fulfill',
+       line: 638,
+       method: '_fulfill',
+       native: false },
+     { column: 21,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromise',
+       line: 582,
+       method: '_settlePromise',
+       native: false },
+     { column: 10,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromise0',
+       line: 614,
+       method: '_settlePromise0',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromises',
+       line: 693,
+       method: '_settlePromises',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._fulfill',
+       line: 638,
+       method: '_fulfill',
+       native: false },
+     { column: 57,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._resolveCallback',
+       line: 432,
+       method: '_resolveCallback',
+       native: false },
+     { column: 17,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromiseFromHandler',
+       line: 524,
+       method: '_settlePromiseFromHandler',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromise',
+       line: 569,
+       method: '_settlePromise',
+       native: false },
+     { column: 10,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromise0',
+       line: 614,
+       method: '_settlePromise0',
+       native: false },
+     { column: 18,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\fawn\\node_modules\\bluebird\\js\\release\\promise.js',
+       function: 'Promise._settlePromises',
+       line: 693,
+       method: '_settlePromises',
+       native: false } ],
+  label: 'App logging',
+  timestamp: '2018-11-16 14:02:55',
+  [Symbol(level)]: 'error' }
+{ error:
+   { MongoNetworkError: failed to connect to server [10.170.65.123:27001] on first connect [MongoNetworkError: connect ECONNREFUSED 10.170.65.123:27001]
+       at Pool.<anonymous> (E:\Users\brissettor\Apps\Vidly\node_modules\mongodb-core\lib\topologies\server.js:564:11)
+       at Pool.emit (events.js:182:13)
+       at Connection.<anonymous> (E:\Users\brissettor\Apps\Vidly\node_modules\mongodb-core\lib\connection\pool.js:317:12)
+       at Object.onceWrapper (events.js:273:13)
+       at Connection.emit (events.js:182:13)
+       at Socket.<anonymous> (E:\Users\brissettor\Apps\Vidly\node_modules\mongodb-core\lib\connection\connection.js:246:50)
+       at Object.onceWrapper (events.js:273:13)
+       at Socket.emit (events.js:182:13)
+       at emitErrorNT (internal/streams/destroy.js:82:8)
+       at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)
+       at process._tickCallback (internal/process/next_tick.js:63:19)
+     name: 'MongoNetworkError',
+     errorLabels: [ 'TransientTransactionError' ],
+     [Symbol(mongoErrorContextSymbol)]: {} },
+  level: 'error',
+  message:
+   'uncaughtException: failed to connect to server [10.170.65.123:27001] on first connect [MongoNetworkError: connect ECONNREFUSED 10.170.65.123:27001]\nMongoNetworkError: failed to connect to server [10.170.65.123:27001] on first connect [MongoNetworkError: connect ECONNREFUSED 10.170.65.123:27001]\n    at Pool.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\topologies\\server.js:564:11)\n    at Pool.emit (events.js:182:13)\n    at Connection.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\connection\\pool.js:317:12)\n    at Object.onceWrapper (events.js:273:13)\n    at Connection.emit (events.js:182:13)\n    at Socket.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\connection\\connection.js:246:50)\n    at Object.onceWrapper (events.js:273:13)\n    at Socket.emit (events.js:182:13)\n    at emitErrorNT (internal/streams/destroy.js:82:8)\n    at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)\n    at process._tickCallback (internal/process/next_tick.js:63:19)',
+  stack:
+   'MongoNetworkError: failed to connect to server [10.170.65.123:27001] on first connect [MongoNetworkError: connect ECONNREFUSED 10.170.65.123:27001]\n    at Pool.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\topologies\\server.js:564:11)\n    at Pool.emit (events.js:182:13)\n    at Connection.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\connection\\pool.js:317:12)\n    at Object.onceWrapper (events.js:273:13)\n    at Connection.emit (events.js:182:13)\n    at Socket.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\connection\\connection.js:246:50)\n    at Object.onceWrapper (events.js:273:13)\n    at Socket.emit (events.js:182:13)\n    at emitErrorNT (internal/streams/destroy.js:82:8)\n    at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)\n    at process._tickCallback (internal/process/next_tick.js:63:19)',
+  exception: true,
+  date: 'Fri Nov 16 2018 14:06:31 GMT-0500 (Eastern Standard Time)',
+  process:
+   { pid: 27980,
+     uid: null,
+     gid: null,
+     cwd: 'E:\\Users\\brissettor\\Apps\\Vidly',
+     execPath: 'C:\\Program Files\\nodejs\\node.exe',
+     version: 'v10.13.0',
+     argv:
+      [ 'C:\\Program Files\\nodejs\\node.exe',
+        'E:\\Users\\brissettor\\Apps\\Vidly\\index.js' ],
+     memoryUsage:
+      { rss: 58273792,
+        heapTotal: 57446400,
+        heapUsed: 28072296,
+        external: 36616511 } },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 60444 },
+  trace:
+   [ { column: 11,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\topologies\\server.js',
+       function: null,
+       line: 564,
+       method: null,
+       native: false },
+     { column: 13,
+       file: 'events.js',
+       function: 'Pool.emit',
+       line: 182,
+       method: 'emit',
+       native: false },
+     { column: 12,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\connection\\pool.js',
+       function: null,
+       line: 317,
+       method: null,
+       native: false },
+     { column: 13,
+       file: 'events.js',
+       function: 'Object.onceWrapper',
+       line: 273,
+       method: 'onceWrapper',
+       native: false },
+     { column: 13,
+       file: 'events.js',
+       function: 'Connection.emit',
+       line: 182,
+       method: 'emit',
+       native: false },
+     { column: 50,
+       file:
+        'E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\connection\\connection.js',
+       function: null,
+       line: 246,
+       method: null,
+       native: false },
+     { column: 13,
+       file: 'events.js',
+       function: 'Object.onceWrapper',
+       line: 273,
+       method: 'onceWrapper',
+       native: false },
+     { column: 13,
+       file: 'events.js',
+       function: 'Socket.emit',
+       line: 182,
+       method: 'emit',
+       native: false },
+     { column: 8,
+       file: 'internal/streams/destroy.js',
+       function: 'emitErrorNT',
+       line: 82,
+       method: null,
+       native: false },
+     { column: 3,
+       file: 'internal/streams/destroy.js',
+       function: 'emitErrorAndCloseNT',
+       line: 50,
+       method: null,
+       native: false },
+     { column: 19,
+       file: 'internal/process/next_tick.js',
+       function: 'process._tickCallback',
+       line: 63,
+       method: '_tickCallback',
+       native: false } ],
+  label: 'App logging',
+  timestamp: '2018-11-16 14:06:31',
+  [Symbol(level)]: 'error' }
+{"error":{"name":"MongoNetworkError","errorLabels":["TransientTransactionError"]},"level":"error","message":"uncaughtException: failed to connect to server [10.170.65.123:27001] on first connect [MongoNetworkError: connect ECONNREFUSED 10.170.65.123:27001]\nMongoNetworkError: failed to connect to server [10.170.65.123:27001] on first connect [MongoNetworkError: connect ECONNREFUSED 10.170.65.123:27001]\n    at Pool.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\topologies\\server.js:564:11)\n    at Pool.emit (events.js:182:13)\n    at Connection.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\connection\\pool.js:317:12)\n    at Object.onceWrapper (events.js:273:13)\n    at Connection.emit (events.js:182:13)\n    at Socket.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\connection\\connection.js:246:50)\n    at Object.onceWrapper (events.js:273:13)\n    at Socket.emit (events.js:182:13)\n    at emitErrorNT (internal/streams/destroy.js:82:8)\n    at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)\n    at process._tickCallback (internal/process/next_tick.js:63:19)","stack":"MongoNetworkError: failed to connect to server [10.170.65.123:27001] on first connect [MongoNetworkError: connect ECONNREFUSED 10.170.65.123:27001]\n    at Pool.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\topologies\\server.js:564:11)\n    at Pool.emit (events.js:182:13)\n    at Connection.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\connection\\pool.js:317:12)\n    at Object.onceWrapper (events.js:273:13)\n    at Connection.emit (events.js:182:13)\n    at Socket.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\connection\\connection.js:246:50)\n    at Object.onceWrapper (events.js:273:13)\n    at Socket.emit (events.js:182:13)\n    at emitErrorNT (internal/streams/destroy.js:82:8)\n    at emitErrorAndCloseNT (internal/streams/destroy.js:50:3)\n    at process._tickCallback (internal/process/next_tick.js:63:19)","exception":true,"date":"Fri Nov 16 2018 14:10:04 GMT-0500 (Eastern Standard Time)","process":{"pid":29236,"uid":null,"gid":null,"cwd":"E:\\Users\\brissettor\\Apps\\Vidly","execPath":"C:\\Program Files\\nodejs\\node.exe","version":"v10.13.0","argv":["C:\\Program Files\\nodejs\\node.exe","E:\\Users\\brissettor\\Apps\\Vidly\\index.js"],"memoryUsage":{"rss":58372096,"heapTotal":57970688,"heapUsed":28310168,"external":36616511}},"os":{"loadavg":[0,0,0],"uptime":60657},"trace":[{"column":11,"file":"E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\topologies\\server.js","function":null,"line":564,"method":null,"native":false},{"column":13,"file":"events.js","function":"Pool.emit","line":182,"method":"emit","native":false},{"column":12,"file":"E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\connection\\pool.js","function":null,"line":317,"method":null,"native":false},{"column":13,"file":"events.js","function":"Object.onceWrapper","line":273,"method":"onceWrapper","native":false},{"column":13,"file":"events.js","function":"Connection.emit","line":182,"method":"emit","native":false},{"column":50,"file":"E:\\Users\\brissettor\\Apps\\Vidly\\node_modules\\mongodb-core\\lib\\connection\\connection.js","function":null,"line":246,"method":null,"native":false},{"column":13,"file":"events.js","function":"Object.onceWrapper","line":273,"method":"onceWrapper","native":false},{"column":13,"file":"events.js","function":"Socket.emit","line":182,"method":"emit","native":false},{"column":8,"file":"internal/streams/destroy.js","function":"emitErrorNT","line":82,"method":null,"native":false},{"column":3,"file":"internal/streams/destroy.js","function":"emitErrorAndCloseNT","line":50,"method":null,"native":false},{"column":19,"file":"internal/process/next_tick.js","function":"process._tickCallback","line":63,"method":"_tickCallback","native":false}]}
+{ error:
+   { Error: Cannot find module './middleware/logger'
+       at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
+       at Function.Module._load (internal/modules/cjs/loader.js:506:25)
+       at Module.require (internal/modules/cjs/loader.js:636:17)
+       at require (internal/modules/cjs/helpers.js:20:18)
+       at Object.<anonymous> (E:\Users\brissettor\Apps\Vidly\startup\logging.js:1:78)
+       at Module._compile (internal/modules/cjs/loader.js:688:30)
+       at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+       at Module.load (internal/modules/cjs/loader.js:598:32)
+       at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+       at Function.Module._load (internal/modules/cjs/loader.js:529:3) code: 'MODULE_NOT_FOUND' },
+  level: 'error',
+  message:
+   'uncaughtException: Cannot find module \'./middleware/logger\'\nError: Cannot find module \'./middleware/logger\'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:506:25)\n    at Module.require (internal/modules/cjs/loader.js:636:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\startup\\logging.js:1:78)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\n    at Module.load (internal/modules/cjs/loader.js:598:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)',
+  stack:
+   'Error: Cannot find module \'./middleware/logger\'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:506:25)\n    at Module.require (internal/modules/cjs/loader.js:636:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\startup\\logging.js:1:78)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\n    at Module.load (internal/modules/cjs/loader.js:598:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)',
+  exception: true,
+  date: 'Fri Nov 16 2018 14:44:50 GMT-0500 (Eastern Standard Time)',
+  process:
+   { pid: 22364,
+     uid: null,
+     gid: null,
+     cwd: 'E:\\Users\\brissettor\\Apps\\Vidly',
+     execPath: 'C:\\Program Files\\nodejs\\node.exe',
+     version: 'v10.13.0',
+     argv:
+      [ 'C:\\Program Files\\nodejs\\node.exe',
+        'E:\\Users\\brissettor\\Apps\\Vidly\\index.js' ],
+     memoryUsage:
+      { rss: 38232064,
+        heapTotal: 32227328,
+        heapUsed: 13341528,
+        external: 17949463 } },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 62743 },
+  trace:
+   [ { column: 15,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._resolveFilename',
+       line: 580,
+       method: '_resolveFilename',
+       native: false },
+     { column: 25,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._load',
+       line: 506,
+       method: '_load',
+       native: false },
+     { column: 17,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module.require',
+       line: 636,
+       method: 'require',
+       native: false },
+     { column: 18,
+       file: 'internal/modules/cjs/helpers.js',
+       function: 'require',
+       line: 20,
+       method: null,
+       native: false },
+     { column: 78,
+       file: 'E:\\Users\\brissettor\\Apps\\Vidly\\startup\\logging.js',
+       function: null,
+       line: 1,
+       method: null,
+       native: false },
+     { column: 30,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._compile',
+       line: 688,
+       method: '_compile',
+       native: false },
+     { column: 10,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._extensions..js',
+       line: 699,
+       method: '.js',
+       native: false },
+     { column: 32,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module.load',
+       line: 598,
+       method: 'load',
+       native: false },
+     { column: 12,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'tryModuleLoad',
+       line: 537,
+       method: null,
+       native: false },
+     { column: 3,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._load',
+       line: 529,
+       method: '_load',
+       native: false } ],
+  label: 'App logging',
+  timestamp: '2018-11-16 14:44:50',
+  [Symbol(level)]: 'error' }
+{ error:
+   TypeError: enumerateErrorFormat is not a function
+       at Object.<anonymous> (E:\Users\brissettor\Apps\Vidly\middleware\logger.js:49:9)
+       at Module._compile (internal/modules/cjs/loader.js:688:30)
+       at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+       at Module.load (internal/modules/cjs/loader.js:598:32)
+       at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+       at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+       at Module.require (internal/modules/cjs/loader.js:636:17)
+       at require (internal/modules/cjs/helpers.js:20:18)
+       at Object.<anonymous> (E:\Users\brissettor\Apps\Vidly\index.js:1:78)
+       at Module._compile (internal/modules/cjs/loader.js:688:30),
+  level: 'error',
+  message:
+   'uncaughtException: enumerateErrorFormat is not a function\nTypeError: enumerateErrorFormat is not a function\n    at Object.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\middleware\\logger.js:49:9)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\n    at Module.load (internal/modules/cjs/loader.js:598:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)\n    at Module.require (internal/modules/cjs/loader.js:636:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\index.js:1:78)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)',
+  stack:
+   'TypeError: enumerateErrorFormat is not a function\n    at Object.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\middleware\\logger.js:49:9)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\n    at Module.load (internal/modules/cjs/loader.js:598:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)\n    at Module.require (internal/modules/cjs/loader.js:636:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\index.js:1:78)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)',
+  exception: true,
+  date: 'Fri Nov 16 2018 14:51:26 GMT-0500 (Eastern Standard Time)',
+  process:
+   { pid: 27844,
+     uid: null,
+     gid: null,
+     cwd: 'E:\\Users\\brissettor\\Apps\\Vidly',
+     execPath: 'C:\\Program Files\\nodejs\\node.exe',
+     version: 'v10.13.0',
+     argv:
+      [ 'C:\\Program Files\\nodejs\\node.exe',
+        'E:\\Users\\brissettor\\Apps\\Vidly\\index.js' ],
+     memoryUsage:
+      { rss: 35950592,
+        heapTotal: 21217280,
+        heapUsed: 12409048,
+        external: 18029494 } },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 63138 },
+  trace:
+   [ { column: 9,
+       file: 'E:\\Users\\brissettor\\Apps\\Vidly\\middleware\\logger.js',
+       function: null,
+       line: 49,
+       method: null,
+       native: false },
+     { column: 30,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._compile',
+       line: 688,
+       method: '_compile',
+       native: false },
+     { column: 10,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._extensions..js',
+       line: 699,
+       method: '.js',
+       native: false },
+     { column: 32,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module.load',
+       line: 598,
+       method: 'load',
+       native: false },
+     { column: 12,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'tryModuleLoad',
+       line: 537,
+       method: null,
+       native: false },
+     { column: 3,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._load',
+       line: 529,
+       method: '_load',
+       native: false },
+     { column: 17,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module.require',
+       line: 636,
+       method: 'require',
+       native: false },
+     { column: 18,
+       file: 'internal/modules/cjs/helpers.js',
+       function: 'require',
+       line: 20,
+       method: null,
+       native: false },
+     { column: 78,
+       file: 'E:\\Users\\brissettor\\Apps\\Vidly\\index.js',
+       function: null,
+       line: 1,
+       method: null,
+       native: false },
+     { column: 30,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._compile',
+       line: 688,
+       method: '_compile',
+       native: false } ],
+  label: 'App logging',
+  timestamp: '2018-11-16 14:51:26',
+  [Symbol(level)]: 'error' }
+{ error:
+   E:\Users\brissettor\Apps\Vidly\startup\db.js:17
+           .then(() => logger.infoLog.log({level: 'error','Connected to MongoDB..'}));
+                                                                                  ^
+   
+   SyntaxError: Unexpected token }
+       at new Script (vm.js:79:7)
+       at createScript (vm.js:251:10)
+       at Object.runInThisContext (vm.js:303:10)
+       at Module._compile (internal/modules/cjs/loader.js:656:28)
+       at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+       at Module.load (internal/modules/cjs/loader.js:598:32)
+       at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+       at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+       at Module.require (internal/modules/cjs/loader.js:636:17)
+       at require (internal/modules/cjs/helpers.js:20:18)
+       at Object.<anonymous> (E:\Users\brissettor\Apps\Vidly\index.js:8:1)
+       at Module._compile (internal/modules/cjs/loader.js:688:30)
+       at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+       at Module.load (internal/modules/cjs/loader.js:598:32)
+       at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+       at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+       at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+       at startup (internal/bootstrap/node.js:285:19)
+       at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3),
+  level: 'error',
+  message:
+   'uncaughtException: Unexpected token }\nE:\\Users\\brissettor\\Apps\\Vidly\\startup\\db.js:17\n        .then(() => logger.infoLog.log({level: \'error\',\'Connected to MongoDB..\'}));\n                                                                               ^\n\nSyntaxError: Unexpected token }\n    at new Script (vm.js:79:7)\n    at createScript (vm.js:251:10)\n    at Object.runInThisContext (vm.js:303:10)\n    at Module._compile (internal/modules/cjs/loader.js:656:28)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\n    at Module.load (internal/modules/cjs/loader.js:598:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)\n    at Module.require (internal/modules/cjs/loader.js:636:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\index.js:8:1)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\n    at Module.load (internal/modules/cjs/loader.js:598:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)\n    at startup (internal/bootstrap/node.js:285:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)',
+  stack:
+   'E:\\Users\\brissettor\\Apps\\Vidly\\startup\\db.js:17\n        .then(() => logger.infoLog.log({level: \'error\',\'Connected to MongoDB..\'}));\n                                                                               ^\n\nSyntaxError: Unexpected token }\n    at new Script (vm.js:79:7)\n    at createScript (vm.js:251:10)\n    at Object.runInThisContext (vm.js:303:10)\n    at Module._compile (internal/modules/cjs/loader.js:656:28)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\n    at Module.load (internal/modules/cjs/loader.js:598:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)\n    at Module.require (internal/modules/cjs/loader.js:636:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\index.js:8:1)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\n    at Module.load (internal/modules/cjs/loader.js:598:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)\n    at startup (internal/bootstrap/node.js:285:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)',
+  exception: true,
+  date: 'Fri Nov 16 2018 15:01:45 GMT-0500 (Eastern Standard Time)',
+  process:
+   { pid: 7644,
+     uid: null,
+     gid: null,
+     cwd: 'E:\\Users\\brissettor\\Apps\\Vidly',
+     execPath: 'C:\\Program Files\\nodejs\\node.exe',
+     version: 'v10.13.0',
+     argv:
+      [ 'C:\\Program Files\\nodejs\\node.exe',
+        'E:\\Users\\brissettor\\Apps\\Vidly\\index.js' ],
+     memoryUsage:
+      { rss: 57851904,
+        heapTotal: 57970688,
+        heapUsed: 26172496,
+        external: 36402449 } },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 63758 },
+  trace:
+   [ { column: 7,
+       file: 'vm.js',
+       function: 'new Script',
+       line: 79,
+       method: null,
+       native: false },
+     { column: 10,
+       file: 'vm.js',
+       function: 'createScript',
+       line: 251,
+       method: null,
+       native: false },
+     { column: 10,
+       file: 'vm.js',
+       function: 'Object.runInThisContext',
+       line: 303,
+       method: 'runInThisContext',
+       native: false },
+     { column: 28,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._compile',
+       line: 656,
+       method: '_compile',
+       native: false },
+     { column: 10,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._extensions..js',
+       line: 699,
+       method: '.js',
+       native: false },
+     { column: 32,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module.load',
+       line: 598,
+       method: 'load',
+       native: false },
+     { column: 12,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'tryModuleLoad',
+       line: 537,
+       method: null,
+       native: false },
+     { column: 3,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._load',
+       line: 529,
+       method: '_load',
+       native: false },
+     { column: 17,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module.require',
+       line: 636,
+       method: 'require',
+       native: false },
+     { column: 18,
+       file: 'internal/modules/cjs/helpers.js',
+       function: 'require',
+       line: 20,
+       method: null,
+       native: false },
+     { column: 1,
+       file: 'E:\\Users\\brissettor\\Apps\\Vidly\\index.js',
+       function: null,
+       line: 8,
+       method: null,
+       native: false },
+     { column: 30,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._compile',
+       line: 688,
+       method: '_compile',
+       native: false },
+     { column: 10,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._extensions..js',
+       line: 699,
+       method: '.js',
+       native: false },
+     { column: 32,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module.load',
+       line: 598,
+       method: 'load',
+       native: false },
+     { column: 12,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'tryModuleLoad',
+       line: 537,
+       method: null,
+       native: false },
+     { column: 3,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._load',
+       line: 529,
+       method: '_load',
+       native: false },
+     { column: 12,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module.runMain',
+       line: 741,
+       method: 'runMain',
+       native: false },
+     { column: 19,
+       file: 'internal/bootstrap/node.js',
+       function: 'startup',
+       line: 285,
+       method: null,
+       native: false },
+     { column: 3,
+       file: 'internal/bootstrap/node.js',
+       function: 'bootstrapNodeJSCore',
+       line: 739,
+       method: null,
+       native: false } ],
+  label: 'App logging',
+  timestamp: '2018-11-16 15:01:45',
+  [Symbol(level)]: 'error' }
+{ error:
+   ReferenceError: json is not defined
+       at Object.<anonymous> (E:\Users\brissettor\Apps\Vidly\middleware\logger.js:65:13)
+       at Module._compile (internal/modules/cjs/loader.js:688:30)
+       at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+       at Module.load (internal/modules/cjs/loader.js:598:32)
+       at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+       at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+       at Module.require (internal/modules/cjs/loader.js:636:17)
+       at require (internal/modules/cjs/helpers.js:20:18)
+       at Object.<anonymous> (E:\Users\brissettor\Apps\Vidly\index.js:1:78)
+       at Module._compile (internal/modules/cjs/loader.js:688:30),
+  level: 'error',
+  message:
+   'uncaughtException: json is not defined\nReferenceError: json is not defined\n    at Object.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\middleware\\logger.js:65:13)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\n    at Module.load (internal/modules/cjs/loader.js:598:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)\n    at Module.require (internal/modules/cjs/loader.js:636:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\index.js:1:78)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)',
+  stack:
+   'ReferenceError: json is not defined\n    at Object.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\middleware\\logger.js:65:13)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)\n    at Module.load (internal/modules/cjs/loader.js:598:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:529:3)\n    at Module.require (internal/modules/cjs/loader.js:636:17)\n    at require (internal/modules/cjs/helpers.js:20:18)\n    at Object.<anonymous> (E:\\Users\\brissettor\\Apps\\Vidly\\index.js:1:78)\n    at Module._compile (internal/modules/cjs/loader.js:688:30)',
+  exception: true,
+  date: 'Fri Nov 16 2018 15:16:30 GMT-0500 (Eastern Standard Time)',
+  process:
+   { pid: 30680,
+     uid: null,
+     gid: null,
+     cwd: 'E:\\Users\\brissettor\\Apps\\Vidly',
+     execPath: 'C:\\Program Files\\nodejs\\node.exe',
+     version: 'v10.13.0',
+     argv:
+      [ 'C:\\Program Files\\nodejs\\node.exe',
+        'E:\\Users\\brissettor\\Apps\\Vidly\\index.js' ],
+     memoryUsage:
+      { rss: 36261888,
+        heapTotal: 21217280,
+        heapUsed: 12357512,
+        external: 18029494 } },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 64643 },
+  trace:
+   [ { column: 13,
+       file: 'E:\\Users\\brissettor\\Apps\\Vidly\\middleware\\logger.js',
+       function: null,
+       line: 65,
+       method: null,
+       native: false },
+     { column: 30,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._compile',
+       line: 688,
+       method: '_compile',
+       native: false },
+     { column: 10,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._extensions..js',
+       line: 699,
+       method: '.js',
+       native: false },
+     { column: 32,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module.load',
+       line: 598,
+       method: 'load',
+       native: false },
+     { column: 12,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'tryModuleLoad',
+       line: 537,
+       method: null,
+       native: false },
+     { column: 3,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._load',
+       line: 529,
+       method: '_load',
+       native: false },
+     { column: 17,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module.require',
+       line: 636,
+       method: 'require',
+       native: false },
+     { column: 18,
+       file: 'internal/modules/cjs/helpers.js',
+       function: 'require',
+       line: 20,
+       method: null,
+       native: false },
+     { column: 78,
+       file: 'E:\\Users\\brissettor\\Apps\\Vidly\\index.js',
+       function: null,
+       line: 1,
+       method: null,
+       native: false },
+     { column: 30,
+       file: 'internal/modules/cjs/loader.js',
+       function: 'Module._compile',
+       line: 688,
+       method: '_compile',
+       native: false } ],
+  label: 'App logging',
+  timestamp: '2018-11-16 15:16:30',
+  [Symbol(level)]: 'error' }

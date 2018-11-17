@@ -1,3 +1,4 @@
+const mongoose = require('mongoose');
 const logger = require('../middleware/logger');
 
 module.exports = function () {
@@ -13,6 +14,6 @@ module.exports = function () {
                 useFindAndModify: false,
                 useCreateIndex: true,
             })
-        .then(() => log.error.error('Connected to MongoDB..'));
+        .then(() => logger.infoLog.log({level: 'info', message: 'Connected to MongoDB..'}));
 
 }

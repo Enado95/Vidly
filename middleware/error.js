@@ -1,4 +1,4 @@
-const logger = require('../middleware/logger')
+const logger = require('./logger')
 
 module.exports = function (err,req, res, next) {
     logger.errorLog.error(err.message, err);

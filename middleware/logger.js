@@ -41,7 +41,7 @@ const exceptionsLog = winston.createLogger({
         timestamp({
             format: 'YYYY-MM-DD HH:mm:ss'
         }),
-        prettyPrint()
+        prettyPrint(),
     ),
     transports: [
         new winston.transports.File({ filename: 'combined.log', level: 'error' })

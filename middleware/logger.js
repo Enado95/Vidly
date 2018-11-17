@@ -31,11 +31,7 @@ const errorLog = winston.createLogger({
     ),
     transports: [
         new winston.transports.Console({ level: 'error' }),
-        new winston.transports.File({ filename: 'error.log', level: 'error' }),
-        new winston.transports.MongoDB({
-            db: 'mongodb://odane:Passw0rd@10.170.65.113:27001/vidly?authSource=admin',
-            level: 'error'
-        })
+        new winston.transports.File({ filename: 'error.log', level: 'error' })
     ]
 });
 

@@ -16,7 +16,6 @@ module.exports = function() {
         useCreateIndex: true
       }
     )
-
     .then(() =>
       logger.infoLog.log({ level: "info", message: "Connected to MongoDB.." })
     );

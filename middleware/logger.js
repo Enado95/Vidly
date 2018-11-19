@@ -1,7 +1,7 @@
 const winston = require('winston');
 require('winston-mongodb');
 const { format } = winston;
-const { combine, label, timestamp, prettyPrint } = format;
+const { combine, label, timestamp, prettyPrint, colorize } = format;
 
 const enumerateErrorFormat = format(info => {
     if (info.message instanceof Error) {
@@ -27,7 +27,8 @@ const errorLog = winston.createLogger({
         timestamp({
             format: 'YYYY-MM-DD HH:mm:ss'
         }),
-        prettyPrint()
+        prettyPrint(),
+        colorize()
     ),
     transports: [
         new winston.transports.Console({ level: 'error' }),
@@ -42,6 +43,7 @@ const exceptionsLog = winston.createLogger({
             format: 'YYYY-MM-DD HH:mm:ss'
         }),
         prettyPrint(),
+        colorize()
     ),
     transports: [
         new winston.transports.File({ filename: 'combined.log', level: 'error' })
@@ -59,7 +61,8 @@ const infoLog = winston.createLogger({
           level: 'debug',
           format: format.combine(
             enumerateErrorFormat(),
-            format.simple()
+            format.simple(),
+            format.colorize()
           ),
         }),
     ]

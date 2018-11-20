@@ -6,7 +6,7 @@ module.exports = function() {
     .connect(
       "mongodb+srv://cluster0-6aldy.mongodb.net/vidly?retryWrites=true",
       {
-        authSource: "admn",
+        authSource: "admin",
         auth: {
           user: "superuser",
           password: "greatpassword"

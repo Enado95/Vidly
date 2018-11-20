@@ -52,7 +52,7 @@ const exceptionsLog = winston.createLogger({
         new winston.transports.File({ filename: 'exceptions.log', level: 'error', handleExceptions: true }),
         new winston.transports.Console({ level: 'error' })
     ],
-    exitOnError: false
+    //exitOnError: false
 });
 
 const infoLog = winston.createLogger({

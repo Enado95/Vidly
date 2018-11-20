@@ -1,0 +1,141 @@
+{ error: 
+   { MongoError: authentication fail
+    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/topologies/replset.js:1456:15
+    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:869:7
+    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:845:20
+    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/auth/scram.js:266:20
+    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:532:18
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+     errors: 
+      [ { name: 'cluster0-shard-00-01-6aldy.mongodb.net:27017',
+          err: 
+           { MongoError: Authentication failed.
+    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:581:63
+    at authenticateStragglers (/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:504:16)
+    at Connection.messageHandler (/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:540:5)
+    at emitMessageHandler (/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/connection.js:310:10)
+    at TLSSocket.<anonymous> (/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/connection.js:453:17)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at TLSSocket.Readable.push (_stream_readable.js:208:10)
+    at TLSWrap.onread (net.js:601:20)
+             ok: 0,
+             errmsg: 'Authentication failed.',
+             code: 8000,
+             codeName: 'AtlasError',
+             name: 'MongoError',
+             [Symbol(mongoErrorContextSymbol)]: {} } },
+        { name: 'cluster0-shard-00-02-6aldy.mongodb.net:27017',
+          err: 
+           { MongoError: Authentication failed.
+    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:581:63
+    at authenticateStragglers (/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:504:16)
+    at Connection.messageHandler (/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:540:5)
+    at emitMessageHandler (/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/connection.js:310:10)
+    at TLSSocket.<anonymous> (/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/connection.js:453:17)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at TLSSocket.Readable.push (_stream_readable.js:208:10)
+    at TLSWrap.onread (net.js:601:20)
+             ok: 0,
+             errmsg: 'Authentication failed.',
+             code: 8000,
+             codeName: 'AtlasError',
+             name: 'MongoError',
+             [Symbol(mongoErrorContextSymbol)]: {} } },
+        { name: 'cluster0-shard-00-00-6aldy.mongodb.net:27017',
+          err: 
+           { MongoError: Authentication failed.
+    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:581:63
+    at authenticateStragglers (/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:504:16)
+    at Connection.messageHandler (/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:540:5)
+    at emitMessageHandler (/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/connection.js:310:10)
+    at TLSSocket.<anonymous> (/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/connection.js:453:17)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at TLSSocket.Readable.push (_stream_readable.js:208:10)
+    at TLSWrap.onread (net.js:601:20)
+             ok: 0,
+             errmsg: 'Authentication failed.',
+             code: 8000,
+             codeName: 'AtlasError',
+             name: 'MongoError',
+             [Symbol(mongoErrorContextSymbol)]: {} } } ],
+     name: 'MongoError',
+     [Symbol(mongoErrorContextSymbol)]: {} },
+  level: 'error',
+  message: 'uncaughtException: authentication fail\nMongoError: authentication fail\n    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/topologies/replset.js:1456:15\n    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:869:7\n    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:845:20\n    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/auth/scram.js:266:20\n    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:532:18\n    at _combinedTickCallback (internal/process/next_tick.js:132:7)\n    at process._tickCallback (internal/process/next_tick.js:181:9)',
+  stack: 'MongoError: authentication fail\n    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/topologies/replset.js:1456:15\n    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:869:7\n    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:845:20\n    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/auth/scram.js:266:20\n    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js:532:18\n    at _combinedTickCallback (internal/process/next_tick.js:132:7)\n    at process._tickCallback (internal/process/next_tick.js:181:9)',
+  exception: true,
+  date: 'Mon Nov 19 2018 21:13:13 GMT-0500 (EST)',
+  process: 
+   { pid: 2090,
+     uid: 501,
+     gid: 20,
+     cwd: '/Users/FullName/Documents/Work/Apps/Vidly',
+     execPath: '/usr/local/bin/node',
+     version: 'v8.12.0',
+     argv: 
+      [ '/usr/local/bin/node',
+        '/Users/FullName/Documents/Work/Apps/Vidly/index.js' ],
+     memoryUsage: 
+      { rss: 67547136,
+        heapTotal: 58580992,
+        heapUsed: 35184088,
+        external: 37652589 } },
+  os: 
+   { loadavg: [ 1.43212890625, 2.56982421875, 3.3037109375 ],
+     uptime: 4522 },
+  trace: 
+   [ { column: 15,
+       file: '/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/topologies/replset.js',
+       function: null,
+       line: 1456,
+       method: null,
+       native: false },
+     { column: 7,
+       file: '/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js',
+       function: null,
+       line: 869,
+       method: null,
+       native: false },
+     { column: 20,
+       file: '/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js',
+       function: null,
+       line: 845,
+       method: null,
+       native: false },
+     { column: 20,
+       file: '/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/auth/scram.js',
+       function: null,
+       line: 266,
+       method: null,
+       native: false },
+     { column: 18,
+       file: '/Users/FullName/Documents/Work/Apps/Vidly/node_modules/mongodb-core/lib/connection/pool.js',
+       function: null,
+       line: 532,
+       method: null,
+       native: false },
+     { column: 7,
+       file: 'internal/process/next_tick.js',
+       function: '_combinedTickCallback',
+       line: 132,
+       method: null,
+       native: false },
+     { column: 9,
+       file: 'internal/process/next_tick.js',
+       function: 'process._tickCallback',
+       line: 181,
+       method: '_tickCallback',
+       native: false } ],
+  label: 'App logging',
+  timestamp: '2018-11-19 21:13:13',
+  [Symbol(level)]: 'error' }

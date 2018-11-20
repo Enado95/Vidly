@@ -2,9 +2,10 @@
   "jwtPrivateKey": "",
   "Movies": {
     "dbConfig": {
-      "host": "mongodb+srv://test:p%40%24%24word@cluster0-6aldy.mongodb.net/vidly?retryWrites=true&authSource=admin",
+        "host": "mongodb+srv://superuser:greatpassword@cluster0-6aldy.mongodb.net/vidly?retryWrites=true&authSource=admin",
       "user": "superuser",
       "password": "greatpassword"
     }
   }
+
 }

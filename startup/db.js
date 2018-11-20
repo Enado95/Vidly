@@ -7,12 +7,16 @@ module.exports = function() {
     .connect(
       config.get("Movies.dbConfig.host"),
       {
+        // authSource: 'Movies.dbConfig.authSource',
+        auth: {
+          user: "Movies.dbConfig.user",
+          pass: "Movies.dbConfig.password"
+        },
         useNewUrlParser: true,
         useFindAndModify: false,
-        useCreateIndex: true,
-        uri_decode_auth: true 
+        useCreateIndex: true
       },
-      function(err, db) { }
+      function(err,  db) {}
     )
     .then(() =>
       logger.infoLog.log({ level: "info", message: "Connected to MongoDB.." })

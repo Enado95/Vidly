@@ -9,4 +9,6 @@ require('./startup/db')();
 require('./startup/config')();
 
 const port = process.env.PORT || 3000;
-app.listen(port, () => logger.infoLog.log({level: 'info', message: `Listening on port ${port}`}));
+const server = app.listen(port, () => logger.infoLog.log({level: 'info', message: `Listening on port ${port}`}));
+
+module.exports = server;

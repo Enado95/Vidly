@@ -3,15 +3,11 @@ const logger = require("../middleware/logger");
 const config = require("config");
 
 module.exports = function() {
+  const dbEnv = config.get("Movies.dbConfig.DB_ENV")
   mongoose
     .connect(
       config.get("Movies.dbConfig.host"),
       {
-        // authSource: 'Movies.dbConfig.authSource',
-        auth: {
-          user: "Movies.dbConfig.user",
-          pass: "Movies.dbConfig.password"
-        },
         useNewUrlParser: true,
         useFindAndModify: false,
         useCreateIndex: true
@@ -19,6 +15,6 @@ module.exports = function() {
       function(err,  db) {}
     )
     .then(() =>
-      logger.infoLog.log({ level: "info", message: "Connected to MongoDB.." })
+      logger.infoLog.info(`Connect to MongoDB ${dbEnv}`)
     );
 };

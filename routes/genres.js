@@ -1,3 +1,4 @@
+const validateObjectId = require("../middleware/validateObjectId");
 const auth = require('../middleware/auth');
 const admin = require('../middleware/admin');
 const { Genre, validate } = require('../models/genre');
@@ -12,8 +13,7 @@ router.get('/', async (req, res) => {
 });
 
 //Get genre per ID
-router.get('/:id', async (req, res) => {
-
+router.get('/:id', validateObjectId,async (req, res) => {
     const genre = await Genre.findById(mongoose.Types.ObjectId(req.params.id));
 
     if (!genre) return res.status(404).send('The genre with the given id was not found');
@@ -40,7 +40,7 @@ router.post('/', auth, async (req, res) => {
 });
 
 //update genres
-router.put('/:id', async (req, res) => {
+router.put('/:id', validateObjectId,async (req, res) => {
 
     const { error } = validate(req.body);
     if (error) {
@@ -57,7 +57,7 @@ router.put('/:id', async (req, res) => {
 
 });
 
-router.delete('/:id', [auth, admin], async (req, res) => {
+router.delete('/:id', [validateObjectId,auth, admin], async (req, res) => {
 
     const genre = await Genre.findByIdAndDelete(mongoose.Types.ObjectId(req.params.id));
 

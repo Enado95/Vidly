@@ -1,3 +1,4 @@
+const validateObjectId = require("../middleware/validateObjectId");
 const { Movie, validate } = require('../models/movie');
 const { Genre } = require('../models/genre')
 const mongoose = require('mongoose');
@@ -12,7 +13,7 @@ router.get('/', async (req, res) => {
 });
 
 //get movies by id
-router.get('/:id', async (req, res) => {
+router.get('/:id', validateObjectId,async (req, res) => {
 
     const movie = await Movie.findById(mongoose.Types.ObjectId(req.params.id));
 
@@ -45,7 +46,7 @@ router.post('/', async (req, res) => {
 
 });
 
-router.put('/:id', async (req, res) => {
+router.put('/:id', validateObjectId,async (req, res) => {
 
     const { error } = validate(req.body);
     if (error) {
@@ -72,7 +73,7 @@ router.put('/:id', async (req, res) => {
 
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', validateObjectId,async (req, res) => {
 
     const movie = await Movie.findByIdAndDelete(mongoose.Types.ObjectId(req.params.id));
 

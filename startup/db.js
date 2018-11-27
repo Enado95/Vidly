@@ -15,6 +15,6 @@ module.exports = function() {
       function(err,  db) {}
     )
     .then(() =>
-      logger.infoLog.info(`Connect to MongoDB ${dbEnv}`)
+      logger.infoLog.info(`Connected to MongoDB ${dbEnv}`)
     );
 };

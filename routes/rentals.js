@@ -42,7 +42,7 @@ router.post('/', async (req, res) =>{
     });
     try {
         new Fawn.Task()
-        .save('rentals', rental) //password rental object to rentals collection in mongodb 
+        .save('rentals', rental) //pass rental object to rentals collection in mongodb 
         .update('movies', {_id: movie._id }, {
             $inc: { numberInStock: -1 }
         })

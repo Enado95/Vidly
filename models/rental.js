@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
 const Joi = require('joi');
+const moment = require('moment');
 
-const Rental = mongoose.model('Rental',new mongoose.Schema({
-    customer:{
+const rentalSchema = new mongoose.Schema({
+    customer: {
         type: new mongoose.Schema({
             name: {
                 type: String,
@@ -10,15 +11,15 @@ const Rental = mongoose.model('Rental',new mongoose.Schema({
                 maxlength: 255,
                 required: true
             },
-            isGold:{
+            isGold: {
                 type: Boolean,
-                default:false
+                default: false
             },
             phone: {
                 type: String,
                 minlength: 7,
                 maxlength: 50,
-                required: true            
+                required: true
             }
         })
     },
@@ -34,7 +35,7 @@ const Rental = mongoose.model('Rental',new mongoose.Schema({
                 type: Number,
                 required: true,
                 min: 0,
-                max: 300        
+                max: 300
             }
         })
     },
@@ -50,7 +51,23 @@ const Rental = mongoose.model('Rental',new mongoose.Schema({
         type: Number,
         min: 0
     }
-}));
+});
+
+rentalSchema.statics.lookup = function (customerId, movieId) {
+    return this.findOne({
+        'customer._id': customerId,
+        'movie._id': movieId,
+    });
+}
+
+rentalSchema.methods.return = function () {
+    this.dateReturned = new Date();
+
+    const rentalDays = moment().diff(this.dateOut, 'days');
+    this.rentalFee = rentalDays * this.movie.dailyRentalRate;
+}
+
+const Rental = mongoose.model('Rental', rentalSchema);
 
 function validateRental(rental) {
     const schema = {

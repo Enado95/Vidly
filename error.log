@@ -377,3 +377,487 @@
     at Server.emit (events.js:214:7)
     at parserOnIncoming (_http_server.js:634:12)
     at HTTPParser.parserOnHeadersComplete (_http_common.js:117:17) ] }
+{ errors:
+   { name:
+      MongooseError {
+        message:
+         'Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+        name: 'ValidatorError',
+        properties:
+         { validator: [Function],
+           message:
+            'Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+           type: 'minlength',
+           minlength: 5,
+           path: 'name',
+           value: '1234' },
+        kind: 'minlength',
+        path: 'name',
+        value: '1234',
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true } },
+  _message: 'Genre validation failed',
+  message:
+   'Genre validation failed: name: Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+  name: 'ValidationError',
+  level: 'error',
+  label: 'Route Error logging',
+  timestamp: '2018-11-27 11:50:51',
+  [Symbol(level)]: 'error',
+  [Symbol(splat)]:
+   [ { ValidationError: Genre validation failed: name: Path `name` (`1234`) is shorter than the minimum allowed length (5).
+         at ValidationError.Object.<anonymous>.ValidationError.inspect (E:\Users\brissettor\Apps\Vidly\node_modules\mongoose\lib\error\validation.js:59:24)
+         at formatValue (internal/util/inspect.js:453:31)
+         at formatProperty (internal/util/inspect.js:1028:11)
+         at formatArray (internal/util/inspect.js:855:17)
+         at formatRaw (internal/util/inspect.js:680:14)
+         at formatValue (internal/util/inspect.js:471:10)
+         at formatProperty (internal/util/inspect.js:1028:11)
+         at formatRaw (internal/util/inspect.js:684:11)
+         at formatValue (internal/util/inspect.js:471:10)
+         at inspect (internal/util/inspect.js:193:10)
+         at Format.Object.<anonymous>.module.exports.format [as transform] (E:\Users\brissettor\Apps\Vidly\node_modules\logform\pretty-print.js:14:19)
+         at Format.info [as transform] (E:\Users\brissettor\Apps\Vidly\node_modules\logform\combine.js:20:24)
+         at DerivedLogger._transform (E:\Users\brissettor\Apps\Vidly\node_modules\winston\lib\winston\logger.js:235:29)
+         at DerivedLogger.Object.<anonymous>.Transform._read (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:184:10)
+         at DerivedLogger.Object.<anonymous>.Transform._write (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:172:83)
+         at doWrite (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+         at writeOrBuffer (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+         at DerivedLogger.Object.<anonymous>.Writable.write (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+         at DerivedLogger.log (E:\Users\brissettor\Apps\Vidly\node_modules\winston\lib\winston\logger.js:174:12)
+         at DerivedLogger.(anonymous function).args [as error] (E:\Users\brissettor\Apps\Vidly\node_modules\winston\lib\winston\create-logger.js:62:21)
+         at error (E:\Users\brissettor\Apps\Vidly\middleware\error.js:4:21)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle_error (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:71:5)
+         at trim_prefix (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:315:13)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:284:7
+         at Function.process_params (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:335:12)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:275:10)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:635:15
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:260:14)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:127:14)
+         at ret.catch.err (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:18:44)
+       errors:
+        { name:
+           MongooseError {
+             message:
+              'Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+             name: 'ValidatorError',
+             properties:
+              { validator: [Function],
+                message:
+                 'Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+                type: 'minlength',
+                minlength: 5,
+                path: 'name',
+                value: '1234' },
+             kind: 'minlength',
+             path: 'name',
+             value: '1234',
+             reason: undefined,
+             [Symbol(mongoose:validatorError)]: true } },
+       _message: 'Genre validation failed',
+       name: 'ValidationError' } ] }
+{ level: 'error',
+  message: 'Rental.lookup is not a function',
+  label: 'Route Error logging',
+  timestamp: '2018-11-27 11:51:07',
+  [Symbol(level)]: 'error',
+  [Symbol(splat)]:
+   [ TypeError: Rental.lookup is not a function
+         at lookup (E:\Users\brissettor\Apps\Vidly\routes\returns.js:10:31)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:137:13)
+         at next (E:\Users\brissettor\Apps\Vidly\middleware\validate.js:6:7)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:137:13)
+         at next (E:\Users\brissettor\Apps\Vidly\middleware\auth.js:13:9)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:137:13)
+         at Route.dispatch (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:112:3)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:281:22
+         at Function.process_params (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:335:12)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:275:10)
+         at Function.handle (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:174:3)
+         at router (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:47:12)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at trim_prefix (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:317:13)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:284:7
+         at Function.process_params (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:335:12)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:275:10)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\body-parser\lib\read.js:130:5
+         at invokeCallback (E:\Users\brissettor\Apps\Vidly\node_modules\raw-body\index.js:224:16)
+         at done (E:\Users\brissettor\Apps\Vidly\node_modules\raw-body\index.js:213:7)
+         at IncomingMessage.onEnd (E:\Users\brissettor\Apps\Vidly\node_modules\raw-body\index.js:273:7)
+         at IncomingMessage.emit (events.js:182:13)
+         at endReadableNT (_stream_readable.js:1094:12)
+         at process._tickCallback (internal/process/next_tick.js:63:19) ] }
+{ level: 'error',
+  message: 'Rental.lookup is not a function',
+  label: 'Route Error logging',
+  timestamp: '2018-11-27 11:51:17',
+  [Symbol(level)]: 'error',
+  [Symbol(splat)]:
+   [ TypeError: Rental.lookup is not a function
+         at lookup (E:\Users\brissettor\Apps\Vidly\routes\returns.js:10:31)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:137:13)
+         at next (E:\Users\brissettor\Apps\Vidly\middleware\validate.js:6:7)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:137:13)
+         at next (E:\Users\brissettor\Apps\Vidly\middleware\auth.js:13:9)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:137:13)
+         at Route.dispatch (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:112:3)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:281:22
+         at Function.process_params (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:335:12)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:275:10)
+         at Function.handle (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:174:3)
+         at router (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:47:12)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at trim_prefix (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:317:13)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:284:7
+         at Function.process_params (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:335:12)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:275:10)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\body-parser\lib\read.js:130:5
+         at invokeCallback (E:\Users\brissettor\Apps\Vidly\node_modules\raw-body\index.js:224:16)
+         at done (E:\Users\brissettor\Apps\Vidly\node_modules\raw-body\index.js:213:7)
+         at IncomingMessage.onEnd (E:\Users\brissettor\Apps\Vidly\node_modules\raw-body\index.js:273:7)
+         at IncomingMessage.emit (events.js:182:13)
+         at endReadableNT (_stream_readable.js:1094:12)
+         at process._tickCallback (internal/process/next_tick.js:63:19) ] }
+{ level: 'error',
+  message: 'Rental.lookup is not a function',
+  label: 'Route Error logging',
+  timestamp: '2018-11-27 11:51:37',
+  [Symbol(level)]: 'error',
+  [Symbol(splat)]:
+   [ TypeError: Rental.lookup is not a function
+         at lookup (E:\Users\brissettor\Apps\Vidly\routes\returns.js:10:31)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:137:13)
+         at next (E:\Users\brissettor\Apps\Vidly\middleware\validate.js:6:7)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:137:13)
+         at next (E:\Users\brissettor\Apps\Vidly\middleware\auth.js:13:9)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:137:13)
+         at Route.dispatch (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:112:3)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:281:22
+         at Function.process_params (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:335:12)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:275:10)
+         at Function.handle (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:174:3)
+         at router (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:47:12)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at trim_prefix (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:317:13)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:284:7
+         at Function.process_params (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:335:12)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:275:10)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\body-parser\lib\read.js:130:5
+         at invokeCallback (E:\Users\brissettor\Apps\Vidly\node_modules\raw-body\index.js:224:16)
+         at done (E:\Users\brissettor\Apps\Vidly\node_modules\raw-body\index.js:213:7)
+         at IncomingMessage.onEnd (E:\Users\brissettor\Apps\Vidly\node_modules\raw-body\index.js:273:7)
+         at IncomingMessage.emit (events.js:182:13)
+         at endReadableNT (_stream_readable.js:1094:12)
+         at process._tickCallback (internal/process/next_tick.js:63:19) ] }
+{ level: 'error',
+  message: 'Rental.lookup is not a function',
+  label: 'Route Error logging',
+  timestamp: '2018-11-27 11:51:52',
+  [Symbol(level)]: 'error',
+  [Symbol(splat)]:
+   [ TypeError: Rental.lookup is not a function
+         at lookup (E:\Users\brissettor\Apps\Vidly\routes\returns.js:10:31)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:137:13)
+         at next (E:\Users\brissettor\Apps\Vidly\middleware\validate.js:6:7)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:137:13)
+         at next (E:\Users\brissettor\Apps\Vidly\middleware\auth.js:13:9)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:137:13)
+         at Route.dispatch (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:112:3)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:281:22
+         at Function.process_params (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:335:12)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:275:10)
+         at Function.handle (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:174:3)
+         at router (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:47:12)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle [as handle_request] (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:95:5)
+         at trim_prefix (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:317:13)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:284:7
+         at Function.process_params (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:335:12)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:275:10)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\body-parser\lib\read.js:130:5
+         at invokeCallback (E:\Users\brissettor\Apps\Vidly\node_modules\raw-body\index.js:224:16)
+         at done (E:\Users\brissettor\Apps\Vidly\node_modules\raw-body\index.js:213:7)
+         at IncomingMessage.onEnd (E:\Users\brissettor\Apps\Vidly\node_modules\raw-body\index.js:273:7)
+         at IncomingMessage.emit (events.js:182:13)
+         at endReadableNT (_stream_readable.js:1094:12)
+         at process._tickCallback (internal/process/next_tick.js:63:19) ] }
+{ errors:
+   { name:
+      MongooseError {
+        message:
+         'Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+        name: 'ValidatorError',
+        properties:
+         { validator: [Function],
+           message:
+            'Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+           type: 'minlength',
+           minlength: 5,
+           path: 'name',
+           value: '1234' },
+        kind: 'minlength',
+        path: 'name',
+        value: '1234',
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true } },
+  _message: 'Genre validation failed',
+  message:
+   'Genre validation failed: name: Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+  name: 'ValidationError',
+  level: 'error',
+  label: 'Route Error logging',
+  timestamp: '2018-11-27 12:27:33',
+  [Symbol(level)]: 'error',
+  [Symbol(splat)]:
+   [ { ValidationError: Genre validation failed: name: Path `name` (`1234`) is shorter than the minimum allowed length (5).
+         at ValidationError.Object.<anonymous>.ValidationError.inspect (E:\Users\brissettor\Apps\Vidly\node_modules\mongoose\lib\error\validation.js:59:24)
+         at formatValue (internal/util/inspect.js:453:31)
+         at formatProperty (internal/util/inspect.js:1028:11)
+         at formatArray (internal/util/inspect.js:855:17)
+         at formatRaw (internal/util/inspect.js:680:14)
+         at formatValue (internal/util/inspect.js:471:10)
+         at formatProperty (internal/util/inspect.js:1028:11)
+         at formatRaw (internal/util/inspect.js:684:11)
+         at formatValue (internal/util/inspect.js:471:10)
+         at inspect (internal/util/inspect.js:193:10)
+         at Format.Object.<anonymous>.module.exports.format [as transform] (E:\Users\brissettor\Apps\Vidly\node_modules\logform\pretty-print.js:14:19)
+         at Format.info [as transform] (E:\Users\brissettor\Apps\Vidly\node_modules\logform\combine.js:20:24)
+         at DerivedLogger._transform (E:\Users\brissettor\Apps\Vidly\node_modules\winston\lib\winston\logger.js:235:29)
+         at DerivedLogger.Object.<anonymous>.Transform._read (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:184:10)
+         at DerivedLogger.Object.<anonymous>.Transform._write (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:172:83)
+         at doWrite (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+         at writeOrBuffer (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+         at DerivedLogger.Object.<anonymous>.Writable.write (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+         at DerivedLogger.log (E:\Users\brissettor\Apps\Vidly\node_modules\winston\lib\winston\logger.js:174:12)
+         at DerivedLogger.(anonymous function).args [as error] (E:\Users\brissettor\Apps\Vidly\node_modules\winston\lib\winston\create-logger.js:62:21)
+         at error (E:\Users\brissettor\Apps\Vidly\middleware\error.js:4:21)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle_error (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:71:5)
+         at trim_prefix (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:315:13)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:284:7
+         at Function.process_params (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:335:12)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:275:10)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:635:15
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:260:14)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:127:14)
+         at ret.catch.err (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:18:44)
+       errors:
+        { name:
+           MongooseError {
+             message:
+              'Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+             name: 'ValidatorError',
+             properties:
+              { validator: [Function],
+                message:
+                 'Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+                type: 'minlength',
+                minlength: 5,
+                path: 'name',
+                value: '1234' },
+             kind: 'minlength',
+             path: 'name',
+             value: '1234',
+             reason: undefined,
+             [Symbol(mongoose:validatorError)]: true } },
+       _message: 'Genre validation failed',
+       name: 'ValidationError' } ] }
+{ errors:
+   { name:
+      MongooseError {
+        message:
+         'Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+        name: 'ValidatorError',
+        properties:
+         { validator: [Function],
+           message:
+            'Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+           type: 'minlength',
+           minlength: 5,
+           path: 'name',
+           value: '1234' },
+        kind: 'minlength',
+        path: 'name',
+        value: '1234',
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true } },
+  _message: 'Genre validation failed',
+  message:
+   'Genre validation failed: name: Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+  name: 'ValidationError',
+  level: 'error',
+  label: 'Route Error logging',
+  timestamp: '2018-11-27 13:37:15',
+  [Symbol(level)]: 'error',
+  [Symbol(splat)]:
+   [ { ValidationError: Genre validation failed: name: Path `name` (`1234`) is shorter than the minimum allowed length (5).
+         at ValidationError.Object.<anonymous>.ValidationError.inspect (E:\Users\brissettor\Apps\Vidly\node_modules\mongoose\lib\error\validation.js:59:24)
+         at formatValue (internal/util/inspect.js:453:31)
+         at formatProperty (internal/util/inspect.js:1028:11)
+         at formatArray (internal/util/inspect.js:855:17)
+         at formatRaw (internal/util/inspect.js:680:14)
+         at formatValue (internal/util/inspect.js:471:10)
+         at formatProperty (internal/util/inspect.js:1028:11)
+         at formatRaw (internal/util/inspect.js:684:11)
+         at formatValue (internal/util/inspect.js:471:10)
+         at inspect (internal/util/inspect.js:193:10)
+         at Format.Object.<anonymous>.module.exports.format [as transform] (E:\Users\brissettor\Apps\Vidly\node_modules\logform\pretty-print.js:14:19)
+         at Format.info [as transform] (E:\Users\brissettor\Apps\Vidly\node_modules\logform\combine.js:20:24)
+         at DerivedLogger._transform (E:\Users\brissettor\Apps\Vidly\node_modules\winston\lib\winston\logger.js:235:29)
+         at DerivedLogger.Object.<anonymous>.Transform._read (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:184:10)
+         at DerivedLogger.Object.<anonymous>.Transform._write (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:172:83)
+         at doWrite (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+         at writeOrBuffer (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+         at DerivedLogger.Object.<anonymous>.Writable.write (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+         at DerivedLogger.log (E:\Users\brissettor\Apps\Vidly\node_modules\winston\lib\winston\logger.js:174:12)
+         at DerivedLogger.(anonymous function).args [as error] (E:\Users\brissettor\Apps\Vidly\node_modules\winston\lib\winston\create-logger.js:62:21)
+         at error (E:\Users\brissettor\Apps\Vidly\middleware\error.js:4:21)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle_error (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:71:5)
+         at trim_prefix (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:315:13)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:284:7
+         at Function.process_params (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:335:12)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:275:10)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:635:15
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:260:14)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:127:14)
+         at ret.catch.err (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:18:44)
+       errors:
+        { name:
+           MongooseError {
+             message:
+              'Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+             name: 'ValidatorError',
+             properties:
+              { validator: [Function],
+                message:
+                 'Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+                type: 'minlength',
+                minlength: 5,
+                path: 'name',
+                value: '1234' },
+             kind: 'minlength',
+             path: 'name',
+             value: '1234',
+             reason: undefined,
+             [Symbol(mongoose:validatorError)]: true } },
+       _message: 'Genre validation failed',
+       name: 'ValidationError' } ] }
+{ errors:
+   { name:
+      MongooseError {
+        message:
+         'Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+        name: 'ValidatorError',
+        properties:
+         { validator: [Function],
+           message:
+            'Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+           type: 'minlength',
+           minlength: 5,
+           path: 'name',
+           value: '1234' },
+        kind: 'minlength',
+        path: 'name',
+        value: '1234',
+        reason: undefined,
+        [Symbol(mongoose:validatorError)]: true } },
+  _message: 'Genre validation failed',
+  message:
+   'Genre validation failed: name: Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+  name: 'ValidationError',
+  level: 'error',
+  label: 'Route Error logging',
+  timestamp: '2018-11-27 13:43:54',
+  [Symbol(level)]: 'error',
+  [Symbol(splat)]:
+   [ { ValidationError: Genre validation failed: name: Path `name` (`1234`) is shorter than the minimum allowed length (5).
+         at ValidationError.Object.<anonymous>.ValidationError.inspect (E:\Users\brissettor\Apps\Vidly\node_modules\mongoose\lib\error\validation.js:59:24)
+         at formatValue (internal/util/inspect.js:453:31)
+         at formatProperty (internal/util/inspect.js:1028:11)
+         at formatArray (internal/util/inspect.js:855:17)
+         at formatRaw (internal/util/inspect.js:680:14)
+         at formatValue (internal/util/inspect.js:471:10)
+         at formatProperty (internal/util/inspect.js:1028:11)
+         at formatRaw (internal/util/inspect.js:684:11)
+         at formatValue (internal/util/inspect.js:471:10)
+         at inspect (internal/util/inspect.js:193:10)
+         at Format.Object.<anonymous>.module.exports.format [as transform] (E:\Users\brissettor\Apps\Vidly\node_modules\logform\pretty-print.js:14:19)
+         at Format.info [as transform] (E:\Users\brissettor\Apps\Vidly\node_modules\logform\combine.js:20:24)
+         at DerivedLogger._transform (E:\Users\brissettor\Apps\Vidly\node_modules\winston\lib\winston\logger.js:235:29)
+         at DerivedLogger.Object.<anonymous>.Transform._read (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:184:10)
+         at DerivedLogger.Object.<anonymous>.Transform._write (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js:172:83)
+         at doWrite (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+         at writeOrBuffer (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+         at DerivedLogger.Object.<anonymous>.Writable.write (E:\Users\brissettor\Apps\Vidly\node_modules\winston\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+         at DerivedLogger.log (E:\Users\brissettor\Apps\Vidly\node_modules\winston\lib\winston\logger.js:174:12)
+         at DerivedLogger.(anonymous function).args [as error] (E:\Users\brissettor\Apps\Vidly\node_modules\winston\lib\winston\create-logger.js:62:21)
+         at error (E:\Users\brissettor\Apps\Vidly\middleware\error.js:4:21)
+         at newFn (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:16:20)
+         at Layer.handle_error (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\layer.js:71:5)
+         at trim_prefix (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:315:13)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:284:7
+         at Function.process_params (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:335:12)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:275:10)
+         at E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:635:15
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\index.js:260:14)
+         at next (E:\Users\brissettor\Apps\Vidly\node_modules\express\lib\router\route.js:127:14)
+         at ret.catch.err (E:\Users\brissettor\Apps\Vidly\node_modules\express-async-errors\index.js:18:44)
+       errors:
+        { name:
+           MongooseError {
+             message:
+              'Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+             name: 'ValidatorError',
+             properties:
+              { validator: [Function],
+                message:
+                 'Path `name` (`1234`) is shorter than the minimum allowed length (5).',
+                type: 'minlength',
+                minlength: 5,
+                path: 'name',
+                value: '1234' },
+             kind: 'minlength',
+             path: 'name',
+             value: '1234',
+             reason: undefined,
+             [Symbol(mongoose:validatorError)]: true } },
+       _message: 'Genre validation failed',
+       name: 'ValidationError' } ] }

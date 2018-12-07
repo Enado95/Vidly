@@ -861,3 +861,19 @@
              [Symbol(mongoose:validatorError)]: true } },
        _message: 'Genre validation failed',
        name: 'ValidationError' } ] }
+{ message: 'unsupported charset "UTF-8"',
+  charset: 'utf-8',
+  type: 'charset.unsupported',
+  level: 'error',
+  label: 'Route Error logging',
+  timestamp: '2018-11-28 20:33:54',
+  [Symbol(level)]: 'error',
+  [Symbol(splat)]: 
+   [ { UnsupportedMediaTypeError: unsupported charset "UTF-8"
+    at /Users/FullName/Documents/Work/Apps/Vidly/node_modules/body-parser/lib/read.js:83:18
+    at invokeCallback (/Users/FullName/Documents/Work/Apps/Vidly/node_modules/raw-body/index.js:224:16)
+    at _combinedTickCallback (internal/process/next_tick.js:132:7)
+    at process._tickCallback (internal/process/next_tick.js:181:9)
+       message: 'unsupported charset "UTF-8"',
+       charset: 'utf-8',
+       type: 'charset.unsupported' } ] }

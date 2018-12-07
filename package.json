@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/Enado95/Vidly.git"
   },
+  "engines": {
+    "node": "10.14.1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

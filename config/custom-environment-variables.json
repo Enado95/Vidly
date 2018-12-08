@@ -2,7 +2,7 @@
     "jwtPrivateKey": "vidly_jwtPrivateKey",
     "Movies": {
         "dbConfig": {
-          "host": ""     
+          "host": "vidly_db"     
         }
       }
 }
